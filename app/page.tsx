@@ -1,11 +1,14 @@
-export default function Home() {
+import React from 'react'
+import HomeCarousel from './components/HeroSection'
+import FlavourAmbassadorSection from './components/historySection'
+
+const page = () => {
   return (
-    <section className="w-full h-screen bg-white flex items-center justify-center">
-      <div className="max-w-4xl mx-auto px-6 text-center">
-        <h1 className="text-5xl md:text-7xl font-bold text-black">
-          Welcome to Pradhan Sweets
-        </h1>
-      </div>
-    </section>
-  );
+    <div>
+      <HomeCarousel/>
+      <FlavourAmbassadorSection/>
+    </div>
+  )
 }
+
+export default page
