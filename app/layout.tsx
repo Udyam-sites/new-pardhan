@@ -14,7 +14,17 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={goudy.className}>{children}</body>
+      <body
+        className={`${goudy.className} min-h-screen`}
+        style={{
+          backgroundImage: "url('/paper.webp')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "repeat",
+        }}
+      >
+        {children}
+      </body>
     </html>
   );
 }
